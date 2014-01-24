@@ -1,12 +1,20 @@
 (function(){
-	var randomID = function(len,strength){
-		var possibilities = ["abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ", "0123456789", "!§$%&/()=?-.,;:_#<>*+^°`´"];
+	var randomID = function(len,pattern){
+		var possibilities = ["abcdefghijklmnopqrstuvwxyz","ABCDEFGHIJKLMNOPQRSTUVWXYZ", "0123456789", "!§$%&/()=?-.,;:_#<>*+^°`´"];
 		var chars = "";
 
-		var i = strength ? strength : 1;
-		while(i--){
-			chars+=possibilities[i];
-		};
+		var pattern = pattern ? pattern : "aA0";
+		pattern.split('').forEach(function(a){
+			if(!isNaN(parseInt(a))){
+				chars += possibilities[2];
+			}else if(/[a-z]/.test(a)){
+				chars += possibilities[0];
+			}else if(/[A-Z]/.test(a)){
+				chars += possibilities[1];
+			}else{
+				chars += possibilities[3];
+			}
+		});
 		
 		var len = len ? len : 30;
 
