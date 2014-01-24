@@ -6,7 +6,7 @@ Generates a customisable random ID, for node and browsers.
 
 Node
 
-	npm install randomID
+	npm install random-id
 
 Browsers
 
@@ -14,7 +14,7 @@ Browsers
 
 ##Usage
 
-	//var randomID = require("randomID");
+	//var randomID = require("random-id");
 
 	var id = randomID(length, strength);
 
