@@ -1,6 +1,6 @@
 {
   "name": "random-id",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Generates a random String with options.",
   "license": "MIT",
   "author":"Michael Ostermann <metrime@icloud.com>",
