@@ -1,6 +1,6 @@
 (function(){
 	var randomID = function(len,pattern){
-		var possibilities = ["abcdefghijklmnopqrstuvwxyz","ABCDEFGHIJKLMNOPQRSTUVWXYZ", "0123456789", "!§$%&/()=?-.,;:_#<>*+^°`´"];
+		var possibilities = ["abcdefghijklmnopqrstuvwxyz","ABCDEFGHIJKLMNOPQRSTUVWXYZ", "0123456789", "~!@#$%^&()_+-={}[];\',"];
 		var chars = "";
 
 		var pattern = pattern ? pattern : "aA0";

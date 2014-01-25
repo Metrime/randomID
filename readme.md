@@ -27,7 +27,7 @@ Browsers
 	- any lowercase character: includes a-z
 	- any uppercase character: includes A-Z
 	- any number: includes 0-9
-	- anything else: includes special characters (!§$%&/()=?-.,;:_#<>*+^°`´)
+	- anything else: includes special characters (~!@#$%^&()_+-={}[];\',)
 
 
 ##Examples
